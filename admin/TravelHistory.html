@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin | Registration</title>
+    <title>Admin | TravelHistory</title>
     <link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link type="text/css" href="css/theme.css" rel="stylesheet">
@@ -57,16 +57,16 @@
 				<div class="row">
 					<div class="span3">
 						<div class="sidebar">
-						<ul class="widget widget-menu unstyled" style="background-color: white">
-                            <li><a href="RegistrationHome.html"><i class="menu-icon icon-tasks"></i>Home</a></li>
-                            <li><a href="Registration.html"><i class="menu-icon icon-tasks"></i>Register</a></li>
-							<li><a href="TravelHistory.html"><i class="menu-icon icon-tasks"></i>Travel History</a></li>
-							<li><a href="CriminalRecord.html"><i class="menu-icon icon-tasks"></i>Criminal Record</a></li>
-
-		
-                            
-		
-							</ul>
+							<ul class="widget widget-menu unstyled" style="background-color: white">
+								<li><a href="RegistrationHome.html"><i class="menu-icon icon-tasks"></i>Home</a></li>
+								<li><a href="Registration.html"><i class="menu-icon icon-tasks"></i>Register</a></li>
+								<li><a href="TravelHistory.html"><i class="menu-icon icon-tasks"></i>Travel History</a></li>
+								<li><a href="CriminalRecord.html"><i class="menu-icon icon-tasks"></i>Criminal Record</a></li>
+	
+			
+								
+			
+								</ul>
 						</div>
 						<!--/.sidebar-->
 					</div>
@@ -77,17 +77,18 @@
 
 							<div class="module">
 								<div class="module-head">
-									<h3>Register Passenger</h3>
+									<h3>Add Travel History</h3>
 								</div>
 								<div class="module-body">
 
 				
 
 									<form class="form-horizontal row-fluid" name="insertproduct" method="post" enctype="multipart/form-data">
+
 										<div class="control-group">
-											<label class="control-label" for="basicinput">Passenger Name</label>
+											<label class="control-label" for="basicinput">Passport Number</label>
 											<div class="controls">
-												<input type="text" name="passengername" placeholder="Enter Passenger Name" class="span8 tip" required>
+												<input type="text" name="passportnumber" placeholder="Enter Passport Number" class="span8 tip" required>
 											</div>
                                         </div>
 
@@ -98,34 +99,35 @@
 											</div>
                                         </div>
 
+								
+
 										<div class="control-group">
-											<label class="control-label" for="basicinput">Father Name</label>
+											<label class="control-label" for="basicinput">Passenger Name</label>
 											<div class="controls">
-												<input type="text" name="fathername" placeholder="Enter Father Name" class="span8 tip" required>
+												<input type="text" name="passengername" placeholder="Enter Passenger Name" class="span8 tip" required>
 											</div>
                                         </div>
 
 										<div class="control-group">
-											<label class="control-label" for="basicinput">Nationality</label>
+											<label class="control-label" for="basicinput">Departure City</label>
 											<div class="controls">
-												<input type="text" name="nationality" placeholder="Enter Nationality" class="span8 tip" required>
+												<input type="text" name="departurecity" placeholder="Enter Departure City" class="span8 tip" required>
 											</div>
                                         </div>
 
 										<div class="control-group">
-											<label class="control-label" for="basicinput">Date Issue</label>
+											<label class="control-label" for="basicinput">Arrival City</label>
 											<div class="controls">
-												<input type="text" name="dateissue" placeholder="Enter Date Issue" class="span8 tip" required>
-											</div>
-                                        </div>
-
-										<div class="control-group">
-											<label class="control-label" for="basicinput">Date Expiry</label>
-											<div class="controls">
-												<input type="text" name="dateexpiry" placeholder="Enter Expiry Date" class="span8 tip" required>
+												<input type="text" name="arrivalcity" placeholder="Enter Arrival City" class="span8 tip" required>
 											</div>
                                         </div>
                                         
+										<div class="control-group">
+											<label class="control-label" for="basicinput">Travel Date</label>
+											<div class="controls">
+												<input type="text" name="travaldate" placeholder="Enter Travel Date" class="span8 tip" required>
+											</div>
+                                        </div>
 
 
 										<div class="control-group">
