@@ -1,3 +1,15 @@
+<?php
+
+session_start();
+
+include('config.php');
+
+if (strlen($_SESSION['alogin']) == 0)  
+{
+  header('Location: index.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,9 +52,9 @@
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="RegistrationPassword.html">Change Password</a></li>
+                                <li><a href="RegistrationPassword.php">Change Password</a></li>
                                 <li class="divider"></li>
-                                <li><a href="RegistrationSignIn.html">Logout</a></li>
+                                <li><a href="logout.php">Logout</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -58,15 +70,15 @@
 					<div class="span3">
 						<div class="sidebar">
 						<ul class="widget widget-menu unstyled" style="background-color: white">
-                            <li><a href="RegistrationHome.html"><i class="menu-icon icon-tasks"></i>Home</a></li>
-                            <li><a href="Registration.html"><i class="menu-icon icon-tasks"></i>Register</a></li>
-							<li><a href="TravelHistory.html"><i class="menu-icon icon-tasks"></i>Travel History</a></li>
-							<li><a href="CriminalRecord.html"><i class="menu-icon icon-tasks"></i>Criminal Record</a></li>
-
-		
-                            
-		
-							</ul>
+								<li><a href="RegistrationHome.php"><i class="menu-icon icon-tasks"></i>Home</a></li>
+								<li><a href="Registration.php"><i class="menu-icon icon-tasks"></i>Register</a></li>
+								<li><a href="TravelHistory.php"><i class="menu-icon icon-tasks"></i>Travel History</a></li>
+								<li><a href="CriminalRecord.php"><i class="menu-icon icon-tasks"></i>Criminal Record</a></li>
+	
+			
+								
+			
+								</ul>
 						</div>
 						<!--/.sidebar-->
 					</div>
